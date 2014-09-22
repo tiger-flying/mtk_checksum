@@ -14,11 +14,13 @@ Compilation:
 This tool is designed to be portable(but you need a C99 compiler), you can compile it in any OS in theory. I'm only familiar with GNU make, so I write a Makefile only(in a Unix-like system, simply run "make" or "make src" in the terminal). In Windows, you can use MSVS or any other compilers to compile.
 
 Available options(assume the compiled binary is named mtkchecksum/mtkchecksum.exe):
--c	Indicate the path of the pattern config file. If you don't specify this option, the program will search current directory to find a "pattern.ini" file. The program will abort if it can't find a config file.
--t	Specify the folder that contains the factory files. If you don't specify the path, then the program will check current working directory(Note: not necessary where the mtkchecksum resides).
+* -c	Indicate the path of the pattern config file. If you don't specify this option, the program will search current directory to find a "pattern.ini" file. The program will abort if it can't find a config file.
+
+* -t	Specify the folder that contains the factory files. If you don't specify the path, then the program will check current working directory(Note: not necessary where the mtkchecksum resides).
 
 Usage:
 mtkchecksum [-c pattern_config_file] [-t images_folder]
+
 The generated Checksum.ini will be placed in the factory images folder(either current directory or the path you specified with "-t" option).
 
 Note:
